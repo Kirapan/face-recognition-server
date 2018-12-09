@@ -22,7 +22,6 @@ const handleImage = async (req,res, db) => {
     res.json(response[0])
   }
   catch(err) {
-    console.log(err);
     res.status(400).json('unable to get entries')
   }
 }
